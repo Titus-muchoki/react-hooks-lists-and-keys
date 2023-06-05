@@ -8,7 +8,7 @@ function NameList(){
         "tito"
     ]
     const nameElements = names.map((name) => {
-        return <li style={{name: name}}>{name}</li>
+        return <li key={name} style={{name: name}}>{name}</li>
     })
     return(
         <div>
